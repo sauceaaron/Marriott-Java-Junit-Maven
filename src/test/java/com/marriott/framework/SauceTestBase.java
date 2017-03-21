@@ -133,6 +133,7 @@ public abstract class SauceTestBase implements SauceOnDemandSessionIdProvider {
         System.out.println("SAUCE_URL: " + SAUCE_URL);
         System.out.println("DESIRED CAPABILITIES: " + capabilities);
         
+        
         driver = new RemoteWebDriver(SAUCE_URL, capabilities);
         
         System.out.println("CAPABILITIES:" + ((RemoteWebDriver)driver).getCapabilities());
